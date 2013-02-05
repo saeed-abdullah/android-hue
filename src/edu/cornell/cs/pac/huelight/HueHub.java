@@ -1,6 +1,14 @@
+/**
+ * @author Saeed Abdullah
+ */
+/**
+ * Android Utility class for Philips Hue system.
+ * 
+ * I followed the protocol described in http://rsmck.co.uk/hue
+ */
+
 package edu.cornell.cs.pac.huelight;
 
-import java.io.BufferedOutputStream;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStream;
@@ -47,11 +55,11 @@ public class HueHub {
 	
 	/**
 	 * Returns path to access lamp.
-	 * 
+	 *
 	 * There are two types of request to access lamp --- querying a lamp
 	 * using GET request to 'http://YourHueHub/api/key/lights/1' and controlling
 	 * one using PUT request to 'http://YourHueHub/api/key/lights/1/state'.
-	 * 
+	 *
 	 * @param light Light number
 	 * @param isState If 'state' should be appended to the path
 	 */
