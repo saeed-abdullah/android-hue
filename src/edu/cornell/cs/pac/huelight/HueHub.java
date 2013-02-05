@@ -31,6 +31,13 @@ public class HueHub {
 	}
 	
 	/**
+	 * Get hash key in use
+	 */
+	public String getUserNameHash() {
+		return userNameHash;
+	}
+
+	/**
 	 * Generates MD5 hash of given string
 	 */
 	private static String getMd5(String s) throws NoSuchAlgorithmException {
